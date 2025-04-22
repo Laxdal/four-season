@@ -1,0 +1,84 @@
+body {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ margin: 0;
+ background-color: #f4f4f4;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+}
+
+.container {
+ display: flex;
+ gap: 20px;
+ padding: 30px;
+}
+
+.weather-card {
+ background-color: #fff;
+ border-radius: 10px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ overflow: hidden;
+ width: 250px;
+ transition: transform 0.3s ease-in-out;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.weather-card:hover {
+ transform: translateY(-5px);
+ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.season-info, .weather-info {
+ padding: 20px;
+ text-align: center;
+}
+
+.season-info h2 {
+ margin-top: 0;
+ font-size: 2em;
+ font-weight: 600;
+}
+
+.date-range {
+ color: #777;
+ font-size: 0.9em;
+ margin-bottom: 10px;
+}
+
+.temperature {
+ font-size: 1.2em;
+ font-weight: 500;
+ margin-bottom: 5px;
+}
+
+.description {
+ color: #555;
+ font-size: 0.95em;
+}
+
+.icon {
+ font-size: 3em;
+ text-align: center;
+ padding: 20px 0;
+ background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* 各季节的颜色主题 */
+.spring {
+ border-top: 5px solid #8fbc8f; /* 浅绿色 */
+}
+
+.summer {
+ border-top: 5px solid #ffd700; /* 金色 */
+}
+
+.autumn {
+ border-top: 5px solid #f4a460; /* 沙棕色 */
+}
+
+.winter {
+ border-top: 5px solid #add8e6; /* 浅蓝色 */
+}
